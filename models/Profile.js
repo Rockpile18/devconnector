@@ -12,105 +12,49 @@ const ProfileSchema = new Schema({
     required: true,
     max: 40
   },
-  company: {
+  address_line1: {
     type: String
   },
-  website: {
+  address_line2: {
     type: String
   },
-  location: {
+  county: {
     type: String
   },
-  status: {
-    type: String,
-    required: true
-  },
-  skills: {
-    type: [String],
-    required: true
-  },
-  bio: {
+  relationship_status: {
     type: String
   },
-  githubusername: {
-    type: String
+  homeowner: {
+    type: Boolean
   },
-  experience: [
+  beneficiary: [
     {
-      title: {
+      name: {
         type: String,
         required: true
       },
-      company: {
-        type: String,
-        required: true
-      },
-      location: {
+      address_line1: {
         type: String
       },
-      from: {
-        type: Date,
-        required: true
-      },
-      to: {
-        type: Date
-      },
-      current: {
-        type: Boolean,
-        default: false
-      },
-      description: {
+      address_line2: {
         type: String
       }
     }
   ],
-  education: [
+  trustee: [
     {
-      school: {
+      name: {
         type: String,
         required: true
       },
-      degree: {
-        type: String,
-        required: true
+      address_line1: {
+        type: String
       },
-      fieldofstudy: {
-        type: String,
-        required: true
-      },
-      from: {
-        type: Date,
-        required: true
-      },
-      to: {
-        type: Date
-      },
-      current: {
-        type: Boolean,
-        default: false
-      },
-      description: {
+      address_line2: {
         type: String
       }
     }
   ],
-  social: {
-    youtube: {
-      type: String
-    },
-    twitter: {
-      type: String
-    },
-    facebook: {
-      type: String
-    },
-    linkedin: {
-      type: String
-    },
-    instagram: {
-      type: String
-    }
-  },
   date: {
     type: Date,
     default: Date.now

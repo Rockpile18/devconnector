@@ -23,10 +23,8 @@ class Navbar extends Component {
           >
             <img
               className="rounded-circle"
-              src={user.avatar}
               alt={user.name}
               style={{ width: "25px", marginRight: "5px" }}
-              title="You must have a Gravatar connected to your email to display and image"
             />
             Logout
           </button>
@@ -53,7 +51,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            DevConnector
+            Will Builder
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +67,7 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
                   {" "}
-                  Developers
+                  Profile
                 </Link>
               </li>
             </ul>

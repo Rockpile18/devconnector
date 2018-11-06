@@ -1,7 +1,7 @@
 {
-  "name": "devconnector",
+  "name": "will_builder",
   "version": "1.0.0",
-  "description": "Social Network for Developers",
+  "description": "Form Builder intended to provide pro bono legal services",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -17,7 +17,6 @@
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
     "express": "^4.16.4",
-    "gravatar": "^1.6.0",
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.7",
     "passport": "^0.4.0",
