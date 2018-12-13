@@ -53,8 +53,8 @@ class CreateProfile extends Component {
     const options = [
       { label: "Select Relationship Status", value: 0 },
       { label: "Single", value: "Single" },
-      { label: "Married", value: "Married" }
-      { label: "Divorced", value: "Divorced" }
+      { label: "Married", value: "Married" },
+      { label: "Divorced", value: "Divorced" },
       { label: "Widowed", value: "Widowed" }
     ];
 
