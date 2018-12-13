@@ -74,28 +74,28 @@ class CreateProfile extends Component {
                   info="(Boston, MA 02101)"
                 />
                 <TextFieldGroup
-                  placeholder="Company"
-                  name="company"
-                  value={this.state.company}
+                  placeholder="Address Line 2"
+                  name="address_line2"
+                  value={this.state.address_line2}
                   onChange={this.onChange}
-                  error={errors.company}
-                  info="Employer or Company"
+                  error={errors.address_line2}
+                  info="Address line 2"
                 />
                 <TextFieldGroup
-                  placeholder="Website"
-                  name="website"
-                  value={this.state.website}
+                  placeholder="County"
+                  name="county"
+                  value={this.state.county}
                   onChange={this.onChange}
-                  error={errors.website}
-                  info="Could be your own website or a company one."
+                  error={errors.county}
+                  info="County in Montana"
                 />
                 <TextFieldGroup
-                  placeholder="Location"
-                  name="location"
-                  value={this.state.location}
+                  placeholder="Homeowner"
+                  name="homeowner"
+                  value={this.state.homeowner}
                   onChange={this.onChange}
-                  error={errors.location}
-                  info="City or city & state suggested (eg. Boston, MA)"
+                  error={errors.homeowner}
+                  info="TODO: change this to checkbox"
                 />
                 <SelectListGroup
                   placeholder="Relationship Status"
