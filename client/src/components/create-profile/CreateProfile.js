@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import TextFieldGroup from "../common/TextFieldGroup";
 import SelectListGroup from "../common/SelectListGroup";
+import CheckboxGroup from "../common/CheckboxGroup";
 import { createProfile } from "../../actions/profileActions";
 
 class CreateProfile extends Component {
@@ -87,9 +88,9 @@ class CreateProfile extends Component {
                   value={this.state.county}
                   onChange={this.onChange}
                   error={errors.county}
-                  info="County in Montana"
+                  info="County"
                 />
-                <TextFieldGroup
+                <CheckboxGroup
                   placeholder="Homeowner"
                   name="homeowner"
                   value={this.state.homeowner}
