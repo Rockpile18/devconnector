@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import ProfileHeader from "./ProfileHeader";
 import ProfileAbout from "./ProfileAbout";
-import ProfileGithub from "./ProfileGithub";
 import Spinner from "../common/Spinner";
 import { getProfileByUserId } from "../../actions/profileActions";
 
@@ -32,8 +31,8 @@ class Profile extends Component {
         <div>
           <div className="row">
             <div className="col-md-6">
-              <Link to="/profiles" className="btn btn-light mb-3 float-left">
-                Back To Profiles
+              <Link to="/profile" className="btn btn-light mb-3 float-left">
+                Back To Profile
               </Link>
             </div>
             <div className="col-md-6" />
