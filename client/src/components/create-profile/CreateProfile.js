@@ -90,14 +90,6 @@ class CreateProfile extends Component {
                   error={errors.county}
                   info="County"
                 />
-                <CheckboxGroup
-                  placeholder="Homeowner"
-                  name="homeowner"
-                  value={this.state.homeowner}
-                  onChange={this.onChange}
-                  error={errors.homeowner}
-                  info="TODO: change this to checkbox"
-                />
                 <SelectListGroup
                   placeholder="Relationship Status"
                   name="relationship_status"
@@ -106,6 +98,13 @@ class CreateProfile extends Component {
                   error={errors.relationship_status}
                   options={options}
                   info="Relationship Status"
+                />
+                <CheckboxGroup
+                  placeholder="Home Owner?"
+                  name="homeowner"
+                  value={this.state.homeowner}
+                  onChange={this.onChange}
+                  error={errors.homeowner}
                 />
                 <input
                   type="submit"
